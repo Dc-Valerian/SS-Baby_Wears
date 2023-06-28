@@ -1,6 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
-import Register from "../pages/Register";
 import HomeLayout from "../components/Layout/HomeLayout";
+import HomeScreen from "../pages/HomeScreen";
 
 export const element = createBrowserRouter([
   {
@@ -9,7 +9,7 @@ export const element = createBrowserRouter([
     children: [
       {
         index: true,
-        element: <Register />,
+        element: <HomeScreen/>
       },
     ],
   },

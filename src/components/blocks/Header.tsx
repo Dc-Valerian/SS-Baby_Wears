@@ -95,9 +95,9 @@ line-height: 80px;
 font-weight: 700;
 text-align: left;
 
-hover{
+:hover{
   color: rgb(255,128,135);
-
+  cursor: pointer;
 }
 `
 
