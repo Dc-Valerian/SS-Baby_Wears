@@ -1,5 +1,6 @@
 import styled from "styled-components"
 import img from "../assets/hero.jpeg"
+import GlobalButton from "../components/reUse/GlobalButton"
 
 const Hero = () => {
   return (
@@ -13,9 +14,7 @@ const Hero = () => {
             Like a SuperStar
           </Sub>
           <ButtonHold>
-            <Button>
-              Shop Girls
-            </Button>
+           <GlobalButton width="130px" title="Shop Girls" bcc="" hvbcc=""/>
           </ButtonHold>
         </Wrapper>
       </Container>
@@ -24,7 +23,6 @@ const Hero = () => {
 }
 
 export default Hero
-const Button = styled.div``
 
 const ButtonHold = styled.div``
 
