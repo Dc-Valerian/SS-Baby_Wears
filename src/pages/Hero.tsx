@@ -1,5 +1,6 @@
 import styled from "styled-components"
 import img from "../assets/hero.jpeg"
+// import pic from "../assets/wave.svg"
 import GlobalButton from "../components/reUse/GlobalButton"
 
 const Hero = () => {
@@ -14,9 +15,13 @@ const Hero = () => {
             Like a SuperStar
           </Sub>
           <ButtonHold>
-           <GlobalButton width="130px" title="Shop Girls" bcc="" hvbcc=""/>
+           <GlobalButton width="120px" title="Shop Girls" bcc="#F69697" hvbcc="#82CAE1"/>
+           <GlobalButton width="120px" title="Shop Boys" bcc="#82CAE1" hvbcc=""/>
           </ButtonHold>
         </Wrapper>
+        {/* <Wave>
+          <Img src={pic}/>
+        </Wave> */}
       </Container>
     </div>
   )
@@ -24,7 +29,10 @@ const Hero = () => {
 
 export default Hero
 
-const ButtonHold = styled.div``
+const ButtonHold = styled.div`
+display: flex;  
+margin-top: 30px;
+`
 
 const Sub = styled.div`
 color: rgb(255,255,255);
@@ -58,14 +66,30 @@ justify-content: center;
 flex-direction: column;
 `
 
+// const Img = styled.img`
+//   width: 100%;
+//   height: 100%;
+//   object-fit: cover;
+// `
+
+// const Wave = styled.div`
+// /* position: relative; */
+// /* background-color: red; */
+// height: 50px;
+// width: 100%;
+// `
+
 const Container = styled.div`
 /* background-color: brown; */
 width: 100%;
-height: 600px;
+height: 500px;
 display: flex;
 align-items: center;
 justify-content: center;
 background-image: url(${img});
 background-repeat: no-repeat;
 background-size: cover;
+flex-direction: column;
+/* position: absolute; */
+/* margin-top: 10px; */
 `
